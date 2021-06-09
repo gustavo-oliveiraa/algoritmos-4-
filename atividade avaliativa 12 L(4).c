@@ -33,29 +33,32 @@ int main(){
 		scanf("%d", &voto);
 		fflush(stdin);
 	
-	if(voto == 1){
-		candidatoUm++;
-		votosTotal = votosTotal + 1;
-	}
-	else if(voto == 2){
-		candidatoDois++;
-		votosTotal = votosTotal + 1;
-	}
-	else if(voto == 3){
-		candidatoTres++;
-		votosTotal = votosTotal + 1;
-	}
-	else if(voto == 4){
-		candidatoQuatro++;
-		votosTotal = votosTotal + 1;
-	}else if(voto == 5){
-		votoNulo++;
-		votosTotal = votosTotal + 1;
-	}else if(voto == 6){
-		votoBranco++;
-		votosTotal = votosTotal + 1;
-	}else
-		printf("Código não encontrado no sistema.\n");
+		if(voto == 1){
+			candidatoUm++;
+			votosTotal = votosTotal + 1;
+		}
+		else if(voto == 2){
+			candidatoDois++;
+			votosTotal = votosTotal + 1;
+		}
+		else if(voto == 3){
+			candidatoTres++;
+			votosTotal = votosTotal + 1;
+		}
+		else if(voto == 4){
+			candidatoQuatro++;
+			votosTotal = votosTotal + 1;
+		}
+		else if(voto == 5){
+			votoNulo++;
+			votosTotal = votosTotal + 1;
+		}
+		else if(voto == 6){
+			votoBranco++;
+			votosTotal = votosTotal + 1;
+		}
+		else
+			printf("Código não encontrado no sistema.\n");
 	
 	}while(voto != 0);
 	
