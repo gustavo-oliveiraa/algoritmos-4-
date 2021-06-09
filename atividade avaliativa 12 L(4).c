@@ -1,12 +1,12 @@
-/*12 ñ Em uma eleiÁ„o presidencial existem quatro candidatos. Os votos s„o informados por cÛdigo.
-Os dados utilizados para a aÁ„o obedecem ‡ seguinte codificaÁ„o:
-ï 1, 2, 3, 4 = voto para os respectivos candidatos;
-ï 5 = voto nulo;
-ï 6 = voto em branco.
+/*12 ‚Äì Em uma elei√ß√£o presidencial existem quatro candidatos. Os votos s√£o informados por c√≥digo.
+Os dados utilizados para a a√ß√£o obedecem √† seguinte codifica√ß√£o:
+‚Ä¢ 1, 2, 3, 4 = voto para os respectivos candidatos;
+‚Ä¢ 5 = voto nulo;
+‚Ä¢ 6 = voto em branco.
 Elabore um algoritmo que calcule e escreva:
-ï O total de votos para cada candidato e seu percentual sobre o total;
-ï O total de votos nulos e seu percentual sobre o total;
-ï O total de votos em branco e seu percentual sobre o total.
+‚Ä¢ O total de votos para cada candidato e seu percentual sobre o total;
+‚Ä¢ O total de votos nulos e seu percentual sobre o total;
+‚Ä¢ O total de votos em branco e seu percentual sobre o total.
 Como finalizador do conjunto de votos, tem-se o valor 0.*/
 
 #include<stdio.h>
@@ -20,18 +20,18 @@ int main(){
 	int voto, candidatoUm=0, candidatoDois=0, candidatoTres=0, candidatoQuatro=0, votoNulo=0, votoBranco=0;
 	float votosTotal=0, porcentagemUm=0, porcentagemDois=0, porcentagemTres=0, porcentagemQuatro=0, porcentagemNulo=0, porcentagemBranco=0;
 	
-	printf("Para a eleiÁ„o utilize |1| - votar no primeiro candidato.\n");
-	printf("Para a eleiÁ„o utilize |2| - votar no segundo candidato.\n");
-	printf("Para a eleiÁ„o utilize |3| - votar no terceiro candidato.\n");
-	printf("Para a eleiÁ„o utilize |4| - votar no quarto candidato.\n");
-	printf("Para a eleiÁ„o utilize |5| - votar nulo.\n");
-	printf("Para a eleiÁ„o utilize |6| - votar em branco.\n");
-	printf("Para a eleiÁ„o utilize |0| - para o fim dos votos.\n ");
+	printf("Para a elei√ß√£o utilize |1| - votar no primeiro candidato.\n");
+	printf("Para a elei√ß√£o utilize |2| - votar no segundo candidato.\n");
+	printf("Para a elei√ß√£o utilize |3| - votar no terceiro candidato.\n");
+	printf("Para a elei√ß√£o utilize |4| - votar no quarto candidato.\n");
+	printf("Para a elei√ß√£o utilize |5| - votar nulo.\n");
+	printf("Para a elei√ß√£o utilize |6| - votar em branco.\n");
+	printf("Para a elei√ß√£o utilize |0| - para o fim dos votos.\n ");
 	
 	do{
-	printf("\nDigite seu voto:");
-	scanf("%d", &voto);
-	fflush(stdin);
+		printf("\nDigite seu voto:");
+		scanf("%d", &voto);
+		fflush(stdin);
 	
 	if(voto == 1){
 		candidatoUm++;
@@ -55,7 +55,7 @@ int main(){
 		votoBranco++;
 		votosTotal = votosTotal + 1;
 	}else
-		printf("CÛdigo n„o encontrado no sistema.\n");
+		printf("C√≥digo n√£o encontrado no sistema.\n");
 	
 	}while(voto != 0);
 	
@@ -68,13 +68,13 @@ int main(){
 	
 	system("cls");
 	
-	printf("O total dos votos do primeiro candidato È %d e a porcentagem sobre o total È %.3f porcento.\n", candidatoUm, porcentagemUm);
-	printf("O total dos votos do segundo candidato È %d e a porcentagem sobre o total È %.3f porcento.\n", candidatoDois, porcentagemDois);
-	printf("O total dos votos do terceiro candidato È %d e a porcentagem sobre o total È %.3f porcento.\n", candidatoTres, porcentagemTres);
-	printf("O total dos votos do quarto candidato È %d e a porcentagem sobre o total È %.3f porcento.\n", candidatoQuatro, porcentagemQuatro);
-	printf("O total de votos nulos È %d e a porcentagem sobre o total È %.3f porcento.\n", votoNulo, porcentagemNulo);
-	printf("O total de votos em brancos È %d e a porcentagem sobre o total È %.3f porcento.\n", votoBranco, porcentagemBranco);
+	printf("O total dos votos do primeiro candidato √© %d e a porcentagem sobre o total √© %.3f porcento.\n", candidatoUm, porcentagemUm);
+	printf("O total dos votos do segundo candidato √© %d e a porcentagem sobre o total √© %.3f porcento.\n", candidatoDois, porcentagemDois);
+	printf("O total dos votos do terceiro candidato √© %d e a porcentagem sobre o total √© %.3f porcento.\n", candidatoTres, porcentagemTres);
+	printf("O total dos votos do quarto candidato √© %d e a porcentagem sobre o total √© %.3f porcento.\n", candidatoQuatro, porcentagemQuatro);
+	printf("O total de votos nulos √© %d e a porcentagem sobre o total √© %.3f porcento.\n", votoNulo, porcentagemNulo);
+	printf("O total de votos em brancos √© %d e a porcentagem sobre o total √© %.3f porcento.\n", votoBranco, porcentagemBranco);
 	
-	system("pause");
+    system("pause");
     return 0;	
 }
