@@ -1,4 +1,4 @@
-/*5 – Escreva um algoritmo que imprima todas as possibilidades de que o lançamento de dois dados
+/*5 â€“ Escreva um algoritmo que imprima todas as possibilidades de que o lanÃ§amento de dois dados
 tenhamos o valor 7 como resultado da soma dos valores de cada dado.*/
 
 #include<stdio.h>
@@ -18,17 +18,7 @@ int main(){
 				printf("%d + %d = %d\n", contadorUm, contadorDois, soma);
 			}
 		}
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	}	
 	
 	system("pause");
 	return 0;
